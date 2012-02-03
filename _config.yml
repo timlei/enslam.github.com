@@ -14,8 +14,8 @@ email: me@example.com
 
 # configuration for ehancements, uncomment to enable
 
-# feedburner:
-#   id: feedburnerid
+feedburner:
+  id: DaleWilliams
 
 # google_analytics:
 #   account: UA-XXXXX-X
@@ -23,5 +23,5 @@ email: me@example.com
 # github:
 #   username: ghusername
 
-# disqus:
-#   id: disqusid
+disqus:
+  id: enslam
