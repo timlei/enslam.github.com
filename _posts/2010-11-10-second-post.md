@@ -2,6 +2,7 @@
 layout: post
 title: Second Post
 tags: [second post]
+published: false
 ---
 
 {% highlight ruby %}
