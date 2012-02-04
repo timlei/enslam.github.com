@@ -6,7 +6,10 @@
         <meta name="description" content="{{ page.description }}" />
         {% endif %}
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection" />  
+        <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />  
+        <!--[if IE]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection" /><![endif]-->  
+        <link rel="stylesheet" href="/stylesheets/site.css" type="text/css"  media="screen" />
         {% if site.feedburner %}
         <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
         {% endif %}
@@ -25,34 +28,30 @@
         {% endif %}
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header">
-                <a href="/"><h1>{{ site.title }}</h1></a>
-                <nav>
-                    <ul id="Ul1">
-                        <li><a href="/blog.html">Blog</a></li>
-                        <li><a href="/about.html">About</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div id="header" class="span-24">
+                <a href="/" class="title">{{ site.title }}</a>
             </div>
-            <div id="main">
-                <div id="container">
-                    <div id="content">
-                        {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
-                        {{ content }}
-                    </div>
-                </div>
-                <div id="sidebar">
-                    <h3>Welcome</h3>
-                    <p>
-                        Hi, I'm <a href="/about.html">Dale Williams</a>. <br />
-                        I'm a software developer based in Melbourne Australia. 
-                    </p>
-                </div>
-                <div style="clear: both"></div>
+            <hr />
+            <div id="main" class="span-17 colborder">
+                {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+                {{ content }}
             </div>
-        </div>
-        <div id="footer">
+            <div id="sidebar" class="span-6 last">
+                <h3>Welcome</h3>
+                <p>
+                    Hi, I'm <a href="/about.html">Dale Williams</a>. <br />
+                    I'm a software developer based in Melbourne Australia. 
+                </p>
+            </div>
+            <hr class="space"/>
+            <hr />
+            <div id="footer" class="span-24">
+                <ul>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
         </div>
   
         {% if site.github %}
