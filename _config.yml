@@ -17,8 +17,8 @@ email: me@example.com
 feedburner:
   id: DaleWilliams
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+  account: UA-20275850-1
 
 # github:
 #   username: ghusername
