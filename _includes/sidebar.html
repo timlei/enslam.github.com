@@ -7,4 +7,12 @@
     </p>
     <hr class="space"/>
     <hr />
+    <h2 class="bottom">Tags</h2>
+    <li>
+    {% foreach tag in site.tags %}
+        <li>{{ tag }}</li>
+    {% endfor %}
+    </li>
+    <hr class="space"/>
+    <hr />
 </div>
