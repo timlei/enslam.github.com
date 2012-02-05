@@ -38,16 +38,7 @@
                 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                 {{ content }}
             </div>
-            <div id="sidebar" class="span-6 last">
-                <h2 class="bottom">Welcome</h2>
-                <p>
-                    <img src="http://www.gravatar.com/avatar/ea0cd17bcc28810e1581fa9881298c60.png" class="left" style="margin: 3px 20px 0 0" />
-                    Hi, I'm <a href="/about.html">Dale Williams</a>. <br />
-                    I'm a software developer based in Melbourne Australia. 
-                </p>
-                <hr class="space"/>
-                <hr />
-            </div>
+            {{ include sidebar.html }}
             <hr class="space"/>
             <hr />
             <div id="footer" class="span-24">
