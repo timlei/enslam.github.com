@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-{% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
-
 <div class="post">
 {{ content }}
 </div>
+
+{% if page.tags %}Tags: {{ page.tags | join: ", " }}{% endif %}
+{% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }} in {{ page.categories }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
  
 <div id="related">
   <h2>Related Posts</h2>
