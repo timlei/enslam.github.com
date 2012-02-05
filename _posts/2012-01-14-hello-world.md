@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Hello World
-tags: [meta]
+category: blogging
+tags: blogging
 ---
 
 Hi All,

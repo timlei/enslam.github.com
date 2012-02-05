@@ -20,6 +20,9 @@ layout: nil
    <link href="http://{{ site.domain }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://{{ site.domain }}{{ post.id }}</id>
+   {% for category in post.categories %}
+   <category term="{{ category }}" scheme="http://{{ site.domain }}"></category>
+   {% endfor %}
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
