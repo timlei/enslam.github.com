@@ -3,7 +3,7 @@
     <head>
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
         <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{% endif %}" />
-        <meta name="keywords" content="{% if page.tags %}{{ page.tags.join(', ') }}, {% endif %}site.keywords" />
+        <meta name="keywords" content="{% if page.tags %}{{ page.tags.join(', ') }}, {% endif %}{{ site.keywords }}" />
         <meta name="author" content="{{ site.author }}">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
