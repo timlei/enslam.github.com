@@ -38,13 +38,13 @@
                 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                 {{ content }}
             </div>
-            {{ include sidebar.html }}
+            {% include sidebar.html %}
             <hr class="space"/>
             <hr />
             <div id="footer" class="span-24">
                 <ul>
                     <li><a href="/blog">Blog</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="/about">All About Dale</a></li>
                 </ul>
             </div>
         </div>
