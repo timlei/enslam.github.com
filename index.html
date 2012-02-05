@@ -8,9 +8,7 @@ priority: 1.0
   <h2>Blog Posts</h2>
   <ul>
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a> - <a href='{{post.url}}#disqus_thread'>Comments</a>
-      {% for tag in post.tags %} {{ tag }} {% endfor %}
-      </li>
+      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a> - <a href='{{post.url}}#disqus_thread'>Comments</a></li>
     {% endfor %}
   </ul>
 </div>
