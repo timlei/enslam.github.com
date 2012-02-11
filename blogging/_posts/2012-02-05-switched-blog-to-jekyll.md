@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switch blog to jekyll
+title: Switched blog to jekyll
 tags: [jekyll, github]
 ---
 
