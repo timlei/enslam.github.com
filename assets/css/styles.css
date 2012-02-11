@@ -1,0 +1,17 @@
+body {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif !importaint;
+}
+
+.title {
+	font-size: 6em;
+	text-decoration: none;
+    line-height: normal;
+}
+a.title:hover {
+	text-decoration: none;
+    color: initial;
+}
+
+.fl {
+    float: left;
+}
