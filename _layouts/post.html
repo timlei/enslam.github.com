@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div class="post">
+<br />
 {{ content }}
+<div class="alert alert-info">
+    Posted on {{ page.date | date_to_string }} in {{ page.categories }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %} - #{{ page.tags | join: ", #" }}
+    <a class="pull-right" href='{{post.url}}#disqus_thread'>Comments</a>
 </div>
 
-{% if page.tags %}Tags: {{ page.tags | join: ", " }}{% endif %}
-{% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }} in {{ page.categories }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
- 
+
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
