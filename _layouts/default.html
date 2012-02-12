@@ -63,7 +63,13 @@
         {% endif %}
         
         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript"></script>
-        <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/assets/js/bootstrap.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var hash = window.location.hash;
+            if (hash) {
+                $('[href="' + hash + '"]').tab('show');
+            }
+        </script>
         <script src="http://{{ site.disqus.id }}.disqus.com/count.js" type="text/javascript"></script>
     </body>
 </html>

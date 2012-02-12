@@ -1,0 +1,5 @@
+﻿	<ul class="nav">
+	{% for tag in site.tags %}
+		<li><a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">#{{ tag[0] }}</a></li>
+	{% endfor %}
+	</ul>
