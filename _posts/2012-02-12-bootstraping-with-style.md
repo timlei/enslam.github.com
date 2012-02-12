@@ -3,7 +3,7 @@ layout: post
 title: Bootstraping with style
 tags: 
   blogging
-  bootstrap
+  webdev
 ---
 
 Just over a week ago twitter released v2.0 of [Bootstrap](http://twitter.github.com/bootstrap/).

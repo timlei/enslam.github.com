@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Hello World
-tags: blogging
+tags:
+  blogging
 ---
 
 Hi All,

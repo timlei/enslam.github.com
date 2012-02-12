@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Switched blog to jekyll
-tags: [jekyll, github]
+tags:
+  blogging
 ---
 
 This weekend I've spent some time migrating my blog from Blogger to a github hosted [jekyll](https://github.com/mojombo/jekyll) site.

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Code52 - What a great idea 
-tags: [code52, opensource, development]
+tags:
+  programing
 ---
 Earlier this week I saw an intriguing post on twitter inviting people to join the code52 room on JabbR.
 
