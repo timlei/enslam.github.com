@@ -4,10 +4,8 @@ layout: default
 <br />
 {{ content }}
 <div class="alert alert-info">
-    Posted on {{ page.date | date_to_string }} in {{ page.categories }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
-	{% for tag in page.tags %}
-		<a href="/tags/#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
-	{% endfor %}
+    Posted on {{ page.date | date_to_string }} in 
+	{% for tag in page.tags %} <a href="/tags/#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>{% endfor %}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}
     <a class="pull-right" href='{{post.url}}#disqus_thread'>Comments</a>
 </div>
 
