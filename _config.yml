@@ -20,8 +20,8 @@ email: dale@dale-williams.com
 feedburner:
   id: DaleWilliams
 
-google_analytics:
-  account: UA-20275850-1
+#google_analytics:
+#  account: UA-20275850-1
 
 # github:
 #   username: ghusername
